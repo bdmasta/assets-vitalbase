@@ -1,0 +1,457 @@
+@import "nav";
+@import "headings";
+@import "btn";
+@import "slides";
+@import "home-offers";
+@import "features";
+
+
+footer {
+  @include cover-background('//assetsvitalbase.s3.amazonaws.com/img/bg-footer.jpg');
+  .fa-social{
+    padding:0 0.250em 0 0.250em;
+  }
+
+  .footer-social {
+    padding:50px  0 50px 0;
+  }
+
+  .footer-links {
+    padding:3.125em 0 3.125em 0;
+    background-color:rgba(237,237,237,0.6);
+
+    .footer-header {
+      margin-top:1.389em;
+      font-weight:600;
+    }
+
+    a {
+      color:$text-color;
+      &:hover, &:focus, &:active {
+        color:$primary-color;
+      }
+    }
+  }
+  .copyright {
+    padding: 1.563em 0 1.563em 0;
+    @include cover-background('//assetsvitalbase.s3.amazonaws.com/img/bg-copyright.png');
+
+    p {
+      color:#ffffff;
+      margin:0;
+    }
+  }
+}
+
+
+.positioning {
+  padding:4em 0 4em 0;
+  @include cover-background('//assetsvitalbase.s3.amazonaws.com/img/pattern-positioning.jpg');
+  background-position:center center;
+
+  .positioning-highlight {
+    position:relative;
+
+    .fa-positioning {
+      @include font-size(170px);
+      color:#ffffff;
+    }
+  }
+}
+
+.issue{
+
+  background-position:center top;
+
+  .issue-tile {
+    padding:2.500em 1.250em 0 1.250em;
+    .fa-issue {
+      @include font-size(160px);
+    }
+    .issue-description {
+      @include font-size(18px);
+      font-weight:600;
+    }
+  }
+}
+
+.issue-vibbyoak {@include cover-background('//assetsvitalbase.s3.amazonaws.com/img/bg-issue-vibbyoak.jpg');}
+.issue-vibbyleaf  {
+  padding-bottom:26.375em!important;
+  @include cover-background('//assetsvitalbase.s3.amazonaws.com/img/bg-issue-vibbyleaf.jpg');
+}
+
+.process {
+  padding:0px!important;
+  //background-attachment: fixed;
+  height:30.438em;
+}
+
+#fall-process {
+  @include cover-background('//assetsvitalbase.s3.amazonaws.com/img/fall-process.jpg');
+}
+#gateway-process {
+  @include cover-background('//assetsvitalbase.s3.amazonaws.com/img/gateway-process.jpg');
+}
+
+#fall-process-en {
+  @include cover-background('//assetsvitalbase.s3.amazonaws.com/img/fall-process_EN.jpg');
+}
+#gateway-process-en {
+  @include cover-background('//assetsvitalbase.s3.amazonaws.com/img/gateway-process_EN.jpg');
+
+}
+
+
+
+.solution {
+  padding-bottom:0 !important;
+  @include cover-background('//assetsvitalbase.s3.amazonaws.com/img/pattern-solution.jpg');
+  background-position:center bottom;
+  .solution-vibbyoak-logo {
+    @include at2x('//assetsvitalbase.s3.amazonaws.com/img/vibbyoak-logo', png, 230px, 238px);
+    background-size:230px 238px;
+    width:230px;
+    height:238px;
+  }
+
+  .vibbyoak-compo {
+    position:relative;
+    .vibbyoak-compo-picto {
+      position:absolute;
+
+      figcaption{
+        @include font-size(18px);
+        text-transform:uppercase;
+        color:#ffffff;
+        font-weight:600;
+      }
+    }
+    .innovative {
+      top:4.375em;
+      left:26%;;
+    }
+    .nonstigmatizing {
+      top:4.375em;
+      right:14%;;
+    }
+    .efficient {
+      bottom:3.125em;
+      left:50%;
+    }
+  }
+
+  .vibbyleaf-compo {
+    position:relative;
+    .vibbyleaf-compo-container {
+      position:relative;
+      z-index:990;
+
+      figcaption {
+        @include font-size(18px);
+      }
+    }
+    .vibbyleaf-plunging {
+      position:relative;
+      top:-5.125em;
+    }
+  }
+}
+
+
+
+.contact {
+  @include cover-background('//assetsvitalbase.s3.amazonaws.com/img/pattern-positioning.jpg');
+  .vitalbase-form {
+    .vitalbase-form-group {
+      margin-bottom:1.750em;
+      input, select, textarea {
+        border:0;
+        -webkit-appearance: none;
+        -moz-border-radius: 3.125em;
+        -webkit-border-radius: 3.125em;
+        border-radius: 3.125em;
+      }
+
+      input, select {
+        height:4.125em;
+      }
+      textarea {
+        height:15.6em;
+        -moz-border-radius: 2.188em;
+        -webkit-border-radius: 2.188em;
+        border-radius: 2.188em;
+      }
+
+    }
+    #address {
+      visibility:hidden;
+    }
+  }
+  ::-webkit-input-placeholder { color:$primary-color; }
+  ::-moz-placeholder { color:$primary-color; } /* firefox 19+ */
+  :-ms-input-placeholder { color:$primary-color; } /* ie */
+  input:-moz-placeholder { color:$primary-color; }
+}
+
+
+
+.mod-fallprocess {
+  background-color:#83838b;
+  .fallprocess {
+    position:relative;
+    height:478px;
+    max-height:478px;
+
+    .step-img {
+      position:absolute;
+      display:block;
+      left:50%;
+      top:50%;
+      margin-left:-120px;
+      margin-top:-124px;
+    }
+
+    .step-title{
+      position:absolute;
+      display:block;
+      width:7.111em;
+      top:16.333em;
+      left:50%;
+      margin-left:-3.556em;
+      @include font-size(18px);
+      text-align:center;
+      color:#ffffff;
+      text-transform:uppercase;
+      font-weight:700;
+    }
+
+    .step-arrow {
+      position:absolute;
+      bottom:-22px;
+      left:50%;
+      margin-left:-22px;
+      -ms-transform: rotate(90deg); /* IE 9 */
+      -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+      transform: rotate(90deg);
+    }
+
+    .overlay {
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      padding:3.750em;
+      color:#ffffff;
+      opacity:0;
+
+      .overlay-img {
+        margin:auto;
+      }
+
+      .overlay-title {
+        margin-top:1.250em;
+        margin-bottom:1.250em;
+        @include font-size(40px);
+        color:#ffffff;
+        font-weight:300;
+        text-align:center;
+      }
+
+      .overlay-description {
+        @include font-size(20px);
+        text-align:center;
+        font-weight:500;
+      }
+    }
+
+    &:hover {
+      .overlay {
+        opacity:0;
+        -moz-transition-duration: 0.5s;
+        -o-transition-duration: 0.5s;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+      }
+    }
+  }
+
+  .walk {
+    @include cover-background ('//assetsvitalbase.s3.amazonaws.com/img/bg-walk.png');
+    .overlay {
+      background-color: rgba(65, 28, 117, 0.95);
+    }
+  }
+
+  .dizziness {
+    @include cover-background ('//assetsvitalbase.s3.amazonaws.com/img/bg-dizziness.png');
+    .overlay {
+      background-color: rgba(35, 92, 174, 0.95);
+    }
+  }
+  .fall {
+    @include cover-background ('//assetsvitalbase.s3.amazonaws.com/img/bg-fall.png');
+    .overlay {
+      background-color: rgba(7, 158, 232, 0.95);
+    }
+  }
+  .alarm {
+    @include cover-background ('//assetsvitalbase.s3.amazonaws.com/img/bg-alarm.png');
+    .overlay {
+      background-color: rgba(226, 0, 59, 0.95);
+    }
+  }
+
+
+  .happy {
+    @include font-size(220px);
+    line-height:normal;
+    text-transform:uppercase;
+    font-weight:100;
+    color:#7f7f88;
+    letter-spacing:-0.045em;
+  }
+  .colette {
+    margin-top:-0.767em;
+    @include font-size(60px);
+    color:#ffffff;
+    line-height:normal;
+    font-weight:900;
+  }
+  .colette-age {
+    margin-top:-0.186em;
+    @include font-size(216px);
+    line-height:normal;
+    color:#ffffff;
+  }
+
+}
+
+@media (min-width: 991px){
+  .mod-fallprocess {
+    @include cover-background ('//assetsvitalbase.s3.amazonaws.com/img/bg-colette.png');
+    background-position:center top;
+    .fallprocess {
+      .step-arrow {
+        top:50%;
+        left:100%;
+        -ms-transform: rotate(0deg); /* IE 9 */
+        -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+        transform: rotate(0deg);
+      }
+
+      &:hover {
+        cursor:pointer;
+        .overlay {
+          opacity:1;
+          -moz-transition-duration: 0.5s;
+          -o-transition-duration: 0.5s;
+          -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px){
+  .mod-fallprocess {
+    .fallprocess {
+      .overlay {
+        .overlay-title {
+          margin-top:1.136em;
+          margin-bottom:1.136em;
+          @include font-size(22px);
+        }
+        .overlay-description {
+          @include font-size(14px);
+        }
+      }
+    }
+    .happy {
+      @include font-size(116px);
+    }
+    .colette {
+      margin-top:0;
+    }
+  }
+}
+
+@media (min-width: 1200px){
+  .mod-fallprocess {
+    .fallprocess {
+      .overlay {
+        .overlay-title {
+          margin-top:1.250em;
+          margin-bottom:1.250em;
+          @include font-size(40px);
+        }
+        .overlay-description {
+          @include font-size(16px);
+        }
+      }
+    }
+    .happy {
+      @include font-size(148px);
+    }
+    .colette {
+      margin-top:-0.333em;
+    }
+  }
+}
+
+@media (min-width: 1824px){
+  .mod-fallprocess {
+    .fallprocess {
+      .overlay {
+        .overlay-description {
+          @include font-size(20px);
+        }
+      }
+    }
+    .happy {
+      @include font-size(220px);
+    }
+    .colette {
+      margin-top:-0.767em;
+    }
+  }
+}
+
+
+
+.watch-switcher {
+  li{
+    padding:0;
+    margin:0 0.313em 0 0.313em;
+    a{
+      display:block;
+      position:relative;
+      @include border-radius(50px);
+      width:2.000em;
+      height:2.000em;
+
+      @include border-radius(50px);
+    }
+    &:hover{cursor:pointer};
+    .selected{
+      &:before {
+        content: '';
+        display: block;
+        position:absolute;
+        width:1.375em;
+        height:1.375em;
+        top:5px;
+        left:5px;
+        border:0.188em solid #ffffff;
+
+        @include border-radius(50px);
+      }
+    }
+
+    .red {background-color:#de003f;}
+    .black {background-color:#000000;}
+    .turquoise {background-color:#2ef0fc;}
+  }
+}

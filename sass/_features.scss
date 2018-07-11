@@ -1,0 +1,235 @@
+.features {
+  @include cover-background('//assetsvitalbase.s3.amazonaws.com/img/pattern-features.jpg');
+  background-position:center top;
+  color:#ffffff;
+
+  .features-container {
+    margin-top:6.875em;
+
+    .feature {
+      position:relative;
+
+      .fa-feature {
+        position:absolute;
+        display:block;
+        left:0;
+        top:0.375em;
+      }
+
+      .feature-list {
+        position:relative;
+        display:block;
+        padding-left: 4em;
+
+        dd {
+          @include font-size(14px);
+        }
+
+        .feature-title {
+          @include font-size(24px);
+          font-style:italic;
+          font-weight:300;
+        }
+
+        .feature-subtitle {
+          font-style: italic;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width:768px){
+  .feature-watch {margin-top:-3.438em;}
+}
+
+
+.vbr-drawing {
+  position:relative;
+  top:-4.063em;
+  /*
+  .vbr-caption{
+  position:absolute;
+
+  .vbr-caption-description {
+  margin:0;
+  line-height:normal;
+  @include font-size(24px);
+}
+
+}
+
+.caption-radio {
+top: 12px;
+left: 658px;
+}
+.caption-interfacing {
+top: 388px;
+left: 378px;
+}
+.caption-connection {
+top: 80px;
+right: 420px;
+}
+
+.caption-user {
+top: 395px;
+right: 274px;
+}
+
+#caption-description-radio {
+display:inline-block;
+margin:10px;
+vertical-align: top;
+}
+
+.nail-radio {
+display:inline-block;
+background-image: url('../img/nail-radio.png');
+width:156px;
+height:101px;
+}
+#caption-description-connection {
+display:inline-block;
+margin:10px;
+vertical-align: top;
+}
+
+.nail-connection {
+display:inline-block;
+background-image: url('../img/nail-connexion.png');
+width:250px;
+height:266px;
+}
+
+#caption-description-interfacing {
+display:inline-block;
+margin:10px;
+vertical-align: bottom;
+}
+
+.nail-interfacing {
+display:inline-block;
+background-image: url('../img/nail-interfacing.png');
+width:145px;
+height:119px;
+}
+
+#caption-description-user {
+display:inline-block;
+margin:10px;
+vertical-align: bottom;
+}
+
+
+.nail-user {
+display:inline-block;
+background-image: url('../img/nail-user.png');
+width:258px;
+height:111px;
+}
+*/
+
+}
+
+/*
+@media (min-width:768px){
+.vbr-drawing {
+position:relative;
+.vbr-caption{
+position:absolute;
+
+.vbr-caption-description {
+margin:0;
+line-height:normal;
+@include font-size(24px);
+}
+
+}
+
+.caption-radio {
+top: 12px;
+left: 658px;
+}
+.caption-interfacing {
+top: 388px;
+left: 378px;
+}
+.caption-connection {
+top: 80px;
+right: 420px;
+}
+
+.caption-user {
+top: 395px;
+right: 274px;
+}
+
+#caption-description-radio {
+display:inline-block;
+margin:10px;
+vertical-align: top;
+}
+
+.nail-radio {
+display:inline-block;
+background-image: url('../img/nail-radio.png');
+width:156px;
+height:101px;
+}
+#caption-description-connection {
+display:inline-block;
+margin:10px;
+vertical-align: top;
+}
+
+.nail-connection {
+display:inline-block;
+background-image: url('../img/nail-connexion.png');
+width:250px;
+height:266px;
+}
+
+#caption-description-interfacing {
+display:inline-block;
+margin:10px;
+vertical-align: bottom;
+}
+
+.nail-interfacing {
+display:inline-block;
+background-image: url('../img/nail-interfacing.png');
+width:145px;
+height:119px;
+}
+
+#caption-description-user {
+display:inline-block;
+margin:10px;
+vertical-align: bottom;
+}
+
+
+.nail-user {
+display:inline-block;
+background-image: url('../img/nail-user.png');
+width:258px;
+height:111px;
+}
+}
+
+
+}
+*/
+
+@media (min-width:768px){
+  .vbr-drawing {
+    position:relative;
+    top:-4.063em;
+
+    .vbr-front-nails {
+
+    }
+  }
+}

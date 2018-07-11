@@ -1,0 +1,56 @@
+html {
+  overflow-y: scroll;
+  font-size: 100%; /* Sets up the Base 10 stuff */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding-top:4.625em; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+
+  font-family: $base-font-family;
+  @include font-size(16px);
+  color:$text-color;
+}
+
+@media (min-width: 768px){
+  body {
+    padding-top:6em;
+  }
+}
+
+a {
+  color:$primary-color;
+  &:hover, &:active, &:focus {
+    color:$primary-color;
+    text-decoration:none;
+  }
+}
+
+h1, h2, h3, h4 {
+  color:$text-color;
+}
+
+
+section, .section {
+  padding:4.063em 0 4.063em 0!important;
+}
+
+.container-wide {
+  padding:0;
+  margin:0;
+  .row {
+    padding:0;
+    margin:0;
+
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12,
+    .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12,
+    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12,
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+      padding:0;
+      margin:0;
+    }
+  }
+}

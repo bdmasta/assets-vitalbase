@@ -1,0 +1,72 @@
+.offers {
+  .offer {
+    position:relative;
+    overflow:hidden;
+    background-position:center top;
+    height:33vw;
+
+    .offer-product-picture {
+      position:absolute;
+    }
+
+    #vibbyoak {
+      height:100%;
+      bottom:0;
+      right:5em;
+    }
+
+    #vbr{
+      width:60%;
+      right:0;
+      top:15%;
+    }
+
+    .offer-content {
+      position:absolute;
+      height:100%;
+      padding:3vw;
+
+      .offer-picto {height:45%;}
+      .offer-slogan{
+        .offer-sloganl1{
+          color:#ffffff;
+          font-size:2.6vw;
+          margin:0.6vw 0 0 0;
+        }
+        .offer-sloganl2{
+          color:#000000;
+          font-size:1.5vw;
+          margin:0.6vw 0 0 0;
+        }
+
+        .soon{
+          display:inline-block;
+          padding: 0.3vw 0.8vw 0.3vw 0.8vw;
+          background-color:#262626;
+          color:#ffffff;
+          -webkit-border-radius: 3.125em;
+          -moz-border-radius: 3.125em;
+          border-radius: 3.125em;
+        }
+      }
+
+      .offer-cta {margin-top:6vw;}
+    }
+  }
+  .offer-click {
+    &:hover {
+      cursor:pointer;
+    }
+  }
+  .offer-vibbyoak {@include cover-background('//assetsvitalbase.s3.amazonaws.com/img/pattern-vibbyoak.jpg');}
+  .offer-vibbyleaf {@include cover-background('//assetsvitalbase.s3.amazonaws.com/img/pattern-vibbyleaf.jpg');}
+  .offer-lifemonitoring {
+    @include cover-background('//assetsvitalbase.s3.amazonaws.com/img/pattern-monitoring.jpg');
+    height:24vw;
+  }
+  .offer-disease {
+    @include cover-background('//assetsvitalbase.s3.amazonaws.com/img/pattern-disease.jpg');
+    height:24vw;
+  }
+
+}

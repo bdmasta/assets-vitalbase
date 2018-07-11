@@ -1,0 +1,40 @@
+.tp-hero-product-h1 {
+  @include font-size(18px);
+}
+
+.hero-title {
+  @include font-size(62px);
+  color:#ffffff;
+  line-height:1em;
+}
+
+.hero-subtitle {
+  @include font-size(34px);
+}
+
+
+.tp-hero-h1 {
+  @include font-size(150px);
+  margin:0;
+  font-weight:600;
+  letter-spacing:-2px;
+}
+
+.tp-hero-connected {
+  display:inline-block;
+  @include font-size(42px);
+  line-height:42px;
+  background-size:298px 81px;
+  background-position:center top;
+  background-image: url('//assetsvitalbase.s3.amazonaws.com/img/box-outline.png');
+  background-size:100%;
+  background-repeat:no-repeat;
+  padding: 1vw 1.5vw;
+  text-align:center;
+  margin:0px;
+  text-transform:uppercase;
+  vertical-align:center;
+  vertical-align:middle;
+  font-weight:300;
+  letter-spacing:-2px;
+}

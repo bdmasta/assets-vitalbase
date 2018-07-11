@@ -1,0 +1,25 @@
+.text-color {color:$text-color!important};
+.text-white {color:#ffffff!important};
+
+.primary-color {color:$primary-color!important};
+.second-color {color:$second-color!important};
+.primary-color-dark {color:$primary-color-dark!important};
+.second-color-light {color:$second-color-light!important};
+
+.bg-primary-color {background-color:$primary-color!important};
+.bg-second-color {background-color:$second-color!important};
+
+
+.light {font-weight:300!important};
+.normal {font-weight:400!important};
+.semibold {font-weight:600!important};
+.bold {font-weight:700!important};
+.extrabold {font-weight:800!important};
+
+.wide {
+  padding:0!important;
+}
+
+.opensans {
+  font-family:'Open Sans', sans-serif;
+}
